@@ -16,8 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/projects" element={<Dashboard/>}/>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup/>} />
+        <Route path="/login" element={<Login />}/>
+        <Route path="/signup" element={<Signup/>}/>
         <Route path="/dashboard" element={isLoggedIn ? <Dashboard /> : <Navigate to="/login" />} />
       </Routes>
     </Router>
