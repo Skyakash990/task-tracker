@@ -5,6 +5,8 @@ const cors = require("cors");
 
 dotenv.config();
 
+
+//express resolved
 const authRoutes = require("./routes/auth");
 const projectRoutes = require("./routes/projects");
 const taskRoutes = require("./routes/tasks");
