@@ -1,9 +1,9 @@
-const mongoose = require("mongoose");
+import { Schema, model } from "mongoose";
 
-const projectSchema = new mongoose.Schema({
+const projectSchema = new Schema({
   name: String,
-  owner: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  owner: { type: Schema.Types.ObjectId, ref: "User" },
   createdAt: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model("Project", projectSchema);
+export default model("Project", projectSchema);

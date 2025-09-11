@@ -1,5 +1,5 @@
-const Project = require("../models/Project");
-const Task = require("../models/Task");
+const Project = require("../models/Project").default;
+const Task = require("../models/Task").default;
 
 // Create Project (max 4 projects per user)
 exports.createProject = async (req, res) => {
