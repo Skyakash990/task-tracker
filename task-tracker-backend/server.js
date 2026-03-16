@@ -3,9 +3,9 @@ import { connect } from "mongoose";
 import { config } from "dotenv";
 import cors from "cors";
 //express resolved
-import authRoutes from "./routes/auth.js";
-import projectRoutes from "./routes/projects.js";
-import taskRoutes from "./routes/tasks.js";
+import authRoutes from "./routes/auth";
+import projectRoutes from "./routes/projects";
+import taskRoutes from "./routes/tasks";
 
 config();
 
